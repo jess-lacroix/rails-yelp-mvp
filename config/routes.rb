@@ -1,4 +1,4 @@
 Rails.application.routes.draw do
   resources :restaurants
-
-end 
+  get 'restaurants/new', to: 'restaurants#new'
+end
